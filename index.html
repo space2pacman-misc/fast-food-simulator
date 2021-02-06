@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fast food simulator</title>
+</head>
+<body>
+	
+<script src="js/Restaurant.js"></script>
+<script>
+	var burgetShot = new Restaurant();
+	var orders = [];
+
+	burgetShot.order(["burger", "burger", "burger", "burger"], handler);
+	burgetShot.order(["burger", "burger", "burger", "burger", "burger"], handler);
+	burgetShot.order(["burger", "burger", "burger"], handler);
+
+	function handler(order) {
+		orders.push(order)
+		
+		console.log(orders)
+	}
+
+</script>
+</body>
+</html>
